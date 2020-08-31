@@ -1,0 +1,279 @@
+@@charset "UTF-8";
+
+/*共通部分
+----------------------------*/
+html{
+  font-size: 100%;
+}
+body {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium" ,YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+  line-height: 1.7;
+  color: #432;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%
+}
+/* HEADER
+-----------------------*/
+header {
+  background-color: #f9a980;
+}
+.menu {
+  flex: 0 0 32px;
+  align-self: center;
+  margin-left: 16px;
+  text-align: center;
+  color: #fff;
+}
+#nava {
+  position: fixed;
+  right: -270px;
+  top: 0;
+  width: 270px;
+  height: 100%;
+  background-color: #ddd;
+}
+#nava ul {
+  list-style: none;
+}
+.show {
+  transform: translate3d(-270px, 0, 0);
+}
+#wrapper, #nava {
+  transition: transform 0.3s;
+}
+.logo {
+  width: 100px;
+  margin-top: 14px;
+  margin-left: 36px;
+}
+.main-nav {
+  display: flex;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-top: 34px;
+
+}
+.main-nav li {
+  margin-right: 36px;
+}
+.main-nav a {
+  color: #432;
+}
+.main-nav a:hover {
+  color: #0bd;
+}
+.page-header {
+  display: flex;
+  justify-content: space-between;
+}
+.home-content {
+  text-align: center;
+}
+.home-content p {
+  text-align: center;
+  font-size: 1.125rem;
+  margin: 10px 0 42px;
+
+}
+/* 大きな背景画像　*/
+.big-bg {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+#home {
+  background-image: url(../images/main-bg.jpg);
+  min-height: 100vh;
+}
+#home .page-title {
+  text-transform: none;
+}
+
+/* ABOUT
+-----------------------------------*/
+
+.page-titlea {
+  font-size: 79px;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+}
+.home-content  {
+  font-size: 23px;
+  color: #fff;
+}
+section.soccer {
+  background-image: url(../images/soccer.JPG);
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+}
+ p {
+  font-size: 15px;
+}
+section.muscle {
+  background-image: url(../images/muscle.jpg);
+  width: 100%;
+  height: 90vh;
+  background-size: : cover;
+}
+section.book {
+  background-image:url(../images/book.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.about-muscle p {
+  margin-top: 100px;
+  text-align: right;
+  position: relative;
+  right: 15%;
+
+}
+.about-book p {
+  text-align: left;
+  position:relative;
+  left: 10%
+}
+.page-titleb {
+  font-size: 79px;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+text-align: right;
+position: relative;
+top: 40px;
+right: 20%;
+}
+.page-titlec {
+  font-size: 79px;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  padding-top: 100px;
+  position: relative;
+  left: 20%;
+  width: 20%;
+}
+.inner {
+  overflow: hidden;
+}
+/* CONTACT
+----------------------------------------*/
+#contact {
+  background-image: url(../images/contact-bg.jpg);
+  min-height: 100vh;
+}
+/*フォーム*/
+form div {
+  margin-bottom: 14px;
+}
+label {
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+  display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea{
+  background: rgba(255, 255, 255, .5);
+  border: 1px #fff solid;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  max-width: 240px;
+}
+textarea {
+  width: 100%;
+  max-width: 480px;
+  height: 6rem;
+}
+input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+  background-color: #00aaff;
+  border-radius: 3px;
+  padding: 9px 9px;
+}
+.button {
+  color: #fff;
+}
+/* フッター
+-----------------------------------*/
+footer {
+  background: #432;
+  text-align: center;
+  padding: 26px 0;
+}
+footer p {
+  color: #fff;
+  font-size: 0.875rem;
+}
+/*モバイル版
+------------------------------------*/
+@media (max-width: 600px) {
+  .page-title {
+    font-size: 2.5rem;
+  }
+  /*HEADER*/
+  h1 {
+    text-align: left;
+    position: relative;
+    right: 30px;
+  }
+  .main-nav {
+    font-size: 1rem;
+    margin-top: 10px;
+    padding-right: 10px;
+  }
+  .main-nav li {
+    margin: 0 20px;
+    display: none;
+  }
+  /*HOME*/
+  .home-content {
+  }
+/* about*/
+.page-titlea {
+  font-size: 40px;
+  margin-right: 10px;
+}
+.page-titleb {
+font-size: 40px;
+text-align: center;
+position: relative;
+bottom: 20%;
+left: 1%;
+padding-top: 30px;
+}
+.page-titlec {
+text-align: center;
+font-size: 40px;
+width: 100%;
+padding-right: 100px;
+}
+.about-muscle p{
+  font-size: 15px;
+  text-align: center;
+  margin-left: 100px;
+}
+.about-book p {
+  margin-right: 10px;
+}
+section.soccer {
+  background-position: center;
+}
+section.muscle {
+  background-position: center;
+}
+section.book {
+  background-position: center;
+}
+}
